@@ -1,18 +1,9 @@
 from selenium import webdriver
-from selenium.common.exceptions import NoSuchElementException
 from selenium.webdriver.common.by import By
 
+link = "http://selenium1py.pythonanywhere.com/catalogue/coders-at-work_207/"
 
-def test_multilingual(browser, language):
-    link = f"http://selenium1py.pythonanywhere.com/{language}/catalogue/coders-at-work_207/"
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(3)
+
+def test_find_add_butthon(browser):
     browser.get(link)
-    button_present = True
-    try:
-        browser.find_element(By.CSS_SELECTOR, "#add_to_basket_form button.btn")
-    except NoSuchElementException:
-        button_present = False
-
-    assert button_present, "Button dose not exist!"
-
+    assert browser.find_element(By.CLASS_NAME, "btn-add-to-basket")
