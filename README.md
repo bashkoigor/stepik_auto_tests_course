@@ -1,4 +1,4 @@
-# Автоматизация тестирования с помощью Selenium и Python 
-Задачи из [курса](https://stepik.org/course/575/syllabus).
+# Test Automation with Selenium and Python
+Tasks from [course](https://stepik.org/course/575/syllabus).
 
-[Cертификат об окончании курса](https://stepik.org/cert/1410716)
+[Course Completion Certificate](https://stepik.org/cert/1410716)
